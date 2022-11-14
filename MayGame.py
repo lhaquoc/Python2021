@@ -55,7 +55,7 @@ class MayGameSamsung(MayGame):
 maygamea = MayGame('Sony PS5', 'my gaming gear', 700, 2022)
 my_comp = Computer()
 
-print(f'{maygame.name}')
+print(f'{maygamea.name}')
 # power on
 maygamea.power_on()
 # light on
