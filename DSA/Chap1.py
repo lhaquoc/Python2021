@@ -51,6 +51,8 @@ def sum_square_odd(n):
 def sum_square_odd_new(n):
     return sum([k*k for k in range(1, n) if k % 2 != 0])
 
+# C-1.13
+
 
 def main():
     # k = input('Please enter k:')
