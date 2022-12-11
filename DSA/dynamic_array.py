@@ -38,3 +38,8 @@ class DynamicArray:
             B[k] = self._A[k]
         self._A = B
         self._capacity = c
+
+
+data = DynamicArray()
+for n in range(1000000):
+    data.insert(0, None)
