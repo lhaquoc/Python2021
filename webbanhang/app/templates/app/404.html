@@ -2,13 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Wrong address</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
     {% load static %}
-    <link rel="stylesheet" href = " {% static 'css/bootstrap.min.css' %}" type="text/css">
+    <link rel="shortcut icon" href="{% static 'app/images/icons8-purchase-flaticons-flat-16.png' %}"
+          type="image/x-icon">
+    <title>Wrong address</title>
 </head>
 <body>
+<div class="container-fluid">
     <h1>Ooops!</h1>
     <h2>Bài viết không tồn tại!</h2>
-    <p><a class="nav-item" href="/">Trang chủ</a></p>
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Trang chủ</a>
+        </li>
+    </ul>
+</div>
+
 </body>
 </html>

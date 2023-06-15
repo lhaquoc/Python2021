@@ -1,10 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base.html' %}
+{% block body %}
+<div class="container">
+    <h2>{{ the_title }}</h2>
+    <form action="/search4" method="post">
+        <table>
+            <p>Use this form to submit a search request:</p>
+            <tr>
+                <td>Phrase:</td>
+                <td><input type="text" name="phrase" width="60"></td>
+            </tr>
+            <tr>
+                <td>Letters:</td>
+                <td><input type="text" name="letters" value="aeiou"></td>
+            </tr>
+        </table>
+        <p>When you are ready, click button:</p>
+        <p><input type="submit" value="Do it!"></p>
+    </form>
+</div>
+{% endblock %}

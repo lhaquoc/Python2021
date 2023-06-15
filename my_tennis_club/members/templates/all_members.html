@@ -1,10 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends "master.html" %} {% block title %} My Tennis Club - List of all
+members {% endblock %} {% block content %}
+<div class="mycard">
+  <h1>Members</h1>
+  <ul>
+    {% for x in my_members %}
+    <li>
+      <a href="details/{{ x.slug }}">{{ x.first_name }} {{ x.last_name }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}
